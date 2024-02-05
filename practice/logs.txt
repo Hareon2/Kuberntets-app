@@ -1,0 +1,4273 @@
+* 
+* ==> Audit <==
+* |---------|----------------|----------|-----------------------|---------|---------------------|---------------------|
+| Command |      Args      | Profile  |         User          | Version |     Start Time      |      End Time       |
+|---------|----------------|----------|-----------------------|---------|---------------------|---------------------|
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:11 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:16 MSK |                     |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:28 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:28 MSK | 17 Jan 24 15:28 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:28 MSK | 17 Jan 24 15:28 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:28 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:29 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:29 MSK | 17 Jan 24 15:29 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:29 MSK | 17 Jan 24 15:29 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:29 MSK | 17 Jan 24 15:29 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:29 MSK | 17 Jan 24 15:29 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:30 MSK | 17 Jan 24 15:30 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:30 MSK | 17 Jan 24 15:31 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:36 MSK | 17 Jan 24 15:36 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 17 Jan 24 15:36 MSK | 17 Jan 24 15:36 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 19:58 MSK |                     |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 19:59 MSK |                     |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:01 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:06 MSK | 18 Jan 24 20:06 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:06 MSK | 18 Jan 24 20:08 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:09 MSK | 18 Jan 24 20:09 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:43 MSK | 18 Jan 24 20:43 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 18 Jan 24 20:57 MSK | 18 Jan 24 20:57 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:51 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:55 MSK |                     |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:55 MSK |                     |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:56 MSK | 22 Jan 24 15:56 MSK |
+| delete  |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:56 MSK | 22 Jan 24 15:56 MSK |
+| start   |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 15:56 MSK | 22 Jan 24 15:57 MSK |
+| ip      |                | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 16:12 MSK | 22 Jan 24 16:12 MSK |
+| addons  | list           | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 18:00 MSK | 22 Jan 24 18:00 MSK |
+| addons  | enable ingress | minikube | LAPTOP-F94MTB1F\kingl | v1.32.0 | 22 Jan 24 18:00 MSK |                     |
+|---------|----------------|----------|-----------------------|---------|---------------------|---------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2024/01/22 15:56:10
+Running on machine: LAPTOP-F94MTB1F
+Binary: Built with gc go1.21.3 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0122 15:56:10.509221   18380 out.go:296] Setting OutFile to fd 100 ...
+I0122 15:56:10.528169   18380 out.go:343] TERM=,COLORTERM=, which probably does not support color
+I0122 15:56:10.528169   18380 out.go:309] Setting ErrFile to fd 104...
+I0122 15:56:10.528169   18380 out.go:343] TERM=,COLORTERM=, which probably does not support color
+I0122 15:56:10.542021   18380 out.go:303] Setting JSON to false
+I0122 15:56:10.546101   18380 start.go:128] hostinfo: {"hostname":"LAPTOP-F94MTB1F","uptime":950545,"bootTime":1704977625,"procs":249,"os":"windows","platform":"Microsoft Windows 11 Home Single Language","platformFamily":"Standalone Workstation","platformVersion":"10.0.22631.3007 Build 22631.3007","kernelVersion":"10.0.22631.3007 Build 22631.3007","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"1d694a66-97ed-4e73-b9cd-a6d226dbca90"}
+W0122 15:56:10.546101   18380 start.go:136] gopshost.Virtualization returned error: not implemented yet
+I0122 15:56:10.547078   18380 out.go:177] * minikube v1.32.0 на Microsoft Windows 11 Home Single Language 10.0.22631.3007 Build 22631.3007
+I0122 15:56:10.547078   18380 notify.go:220] Checking for updates...
+I0122 15:56:10.547078   18380 driver.go:378] Setting default libvirt URI to qemu:///system
+I0122 15:56:10.547078   18380 global.go:111] Querying for installed drivers using PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WireGuard\;C:\Program Files\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Users\kingl.LAPTOP-F94MTB1F\AppData\Local\Microsoft\WindowsApps
+I0122 15:56:10.550639   18380 global.go:122] docker default: true priority: 9, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "docker": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install Docker Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/ Version:}
+I0122 15:56:10.553222   18380 global.go:122] podman default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/ Version:}
+I0122 15:56:10.553222   18380 global.go:122] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0122 15:56:10.979693   18380 global.go:122] hyperv default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @(Get-CimInstance Win32_ComputerSystem).HypervisorPresent returned "False\r\n" Reason: Fix:Enable Hyper-V: Start PowerShell as Administrator, and run: 'Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All' Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/hyperv/ Version:}
+I0122 15:56:10.982363   18380 global.go:122] qemu2 default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0122 15:56:11.001014   18380 virtualbox.go:136] virtual box version: 7.0.12r159484
+I0122 15:56:11.001014   18380 global.go:122] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.12r159484
+}
+I0122 15:56:11.003053   18380 global.go:122] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0122 15:56:11.003053   18380 driver.go:313] not recommending "ssh" due to default: false
+I0122 15:56:11.003053   18380 driver.go:348] Picked: virtualbox
+I0122 15:56:11.003053   18380 driver.go:349] Alternatives: [ssh]
+I0122 15:56:11.003053   18380 driver.go:350] Rejects: [docker podman hyperv qemu2 vmware]
+I0122 15:56:11.003562   18380 out.go:177] * Automatically selected the virtualbox driver
+I0122 15:56:11.004079   18380 start.go:298] selected driver: virtualbox
+I0122 15:56:11.004079   18380 start.go:902] validating driver "virtualbox" against <nil>
+I0122 15:56:11.004079   18380 start.go:913] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.12r159484
+}
+I0122 15:56:11.004591   18380 start_flags.go:309] no existing cluster config was found, will generate one from the flags 
+I0122 15:56:11.050590   18380 start_flags.go:394] Using suggested 3500MB memory alloc based on sys=14188MB, container=0MB
+I0122 15:56:11.051340   18380 start_flags.go:913] Wait components to verify : map[apiserver:true system_pods:true]
+I0122 15:56:11.051340   18380 cni.go:84] Creating CNI manager for ""
+I0122 15:56:11.051340   18380 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0122 15:56:11.051340   18380 start_flags.go:318] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0122 15:56:11.051340   18380 start_flags.go:323] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:3500 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\kingl.LAPTOP-F94MTB1F:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0122 15:56:11.051340   18380 iso.go:125] acquiring lock: {Name:mk8a7b12721b6ba51d6b9eeadc2907dbdb198c6d Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0122 15:56:11.052377   18380 out.go:177] * Запускается control plane узел minikube в кластере minikube
+I0122 15:56:11.052886   18380 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0122 15:56:11.052886   18380 preload.go:148] Found local preload: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4
+I0122 15:56:11.052886   18380 cache.go:56] Caching tarball of preloaded images
+I0122 15:56:11.052886   18380 preload.go:174] Found C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0122 15:56:11.052886   18380 cache.go:59] Finished verifying existence of preloaded tar for  v1.28.3 on docker
+I0122 15:56:11.053398   18380 profile.go:148] Saving config to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\config.json ...
+I0122 15:56:11.053398   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\config.json: {Name:mk58f2c1d33e7ee532a08c8862048a169717fd1d Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:56:11.053908   18380 start.go:365] acquiring machines lock for minikube: {Name:mkbd4bc196eeaf8a3add84002db44357fbfc80a5 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0122 15:56:11.053908   18380 start.go:369] acquired machines lock for "minikube" in 0s
+I0122 15:56:11.053908   18380 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:3500 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\kingl.LAPTOP-F94MTB1F:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:} &{Name: IP: Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0122 15:56:11.054417   18380 start.go:125] createHost starting for "" (driver="virtualbox")
+I0122 15:56:11.054925   18380 out.go:204] * Creating virtualbox VM (CPUs=2, Memory=3500MB, Disk=20000MB) ...
+I0122 15:56:11.055433   18380 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0122 15:56:11.055433   18380 client.go:168] LocalClient.Create starting
+I0122 15:56:11.055433   18380 main.go:141] libmachine: Reading certificate data from C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem
+I0122 15:56:11.055433   18380 main.go:141] libmachine: Decoding PEM data...
+I0122 15:56:11.055433   18380 main.go:141] libmachine: Parsing certificate...
+I0122 15:56:11.055944   18380 main.go:141] libmachine: Reading certificate data from C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\cert.pem
+I0122 15:56:11.055944   18380 main.go:141] libmachine: Decoding PEM data...
+I0122 15:56:11.055944   18380 main.go:141] libmachine: Parsing certificate...
+I0122 15:56:11.055944   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0122 15:56:11.072767   18380 main.go:141] libmachine: STDOUT:
+{
+7.0.12r159484
+}
+I0122 15:56:11.072767   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:11.075737   18380 main.go:141] libmachine: Hyper-V is not installed.
+%!!(MISSING)(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %!P(MISSING)ATH%!)(MISSING)
+I0122 15:56:11.075737   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0122 15:56:11.242420   18380 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            12a84779-9b86-4494-b939-c958f3b02f6f
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::1ae5:6bbf:b5dc:6867
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            491376a6-921a-4195-87f2-9550664e6ed7
+DHCP:            Disabled
+IPAddress:       192.168.25.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::c4c9:59b5:5f1:4694
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:09
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter #5
+GUID:            565a6d78-4f2b-43b2-91c6-58b954d449b8
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::8ea2:ccfd:ff68:92d9
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:4a
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+
+Name:            VirtualBox Host-Only Ethernet Adapter #4
+GUID:            e35c2048-f13f-4210-a535-31616e21d983
+DHCP:            Disabled
+IPAddress:       192.168.10.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::894d:2cd8:73e:2693
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:14
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            ee97e820-fe2f-4785-b585-8d6901186532
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::27fc:ab5f:114a:a511
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0122 15:56:11.242420   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:11.244003   18380 main.go:141] libmachine: Downloading C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\cache\boot2docker.iso from file://C:/Users/kingl.LAPTOP-F94MTB1F/.minikube/cache/iso/amd64/minikube-v1.32.1-amd64.iso...
+I0122 15:56:11.718427   18380 main.go:141] libmachine: Creating VirtualBox VM...
+I0122 15:56:11.718427   18380 main.go:141] libmachine: Creating SSH key...
+I0122 15:56:11.967144   18380 main.go:141] libmachine: Creating disk image...
+I0122 15:56:11.967144   18380 main.go:141] libmachine: Creating 20000 MB hard disk image...
+I0122 15:56:11.967144   18380 main.go:141] libmachine: Writing magic tar header
+I0122 15:56:11.967144   18380 main.go:141] libmachine: Writing SSH key tar header
+I0122 15:56:11.971592   18380 main.go:141] libmachine: Calling inner createDiskImage
+I0122 15:56:11.971592   18380 main.go:141] libmachine: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe convertfromraw stdin C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\disk.vmdk 20971520000 --format VMDK
+I0122 15:56:11.971592   18380 main.go:141] libmachine: Starting command
+I0122 15:56:11.976327   18380 main.go:141] libmachine: Copying to stdin
+I0122 15:56:11.989425   18380 main.go:141] libmachine: Filling zeroes
+I0122 15:56:18.896995   18380 main.go:141] libmachine: Closing STDIN
+I0122 15:56:18.896995   18380 main.go:141] libmachine: Waiting on cmd
+I0122 15:56:18.906630   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe createvm --basefolder C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube --name minikube --register
+I0122 15:56:18.980777   18380 main.go:141] libmachine: STDOUT:
+{
+Virtual machine 'minikube' is created and registered.
+UUID: cd45afb9-a3c8-4ef2-8671-40013e10afaa
+Settings file: 'C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\minikube\minikube.vbox'
+}
+I0122 15:56:18.980777   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:18.980777   18380 main.go:141] libmachine: VM CPUS: 2
+I0122 15:56:18.980777   18380 main.go:141] libmachine: VM Memory: 3500
+I0122 15:56:18.980777   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --firmware bios --bioslogofadein off --bioslogofadeout off --bioslogodisplaytime 0 --biosbootmenu disabled --ostype Linux26_64 --cpus 2 --memory 3500 --acpi on --ioapic on --rtcuseutc on --natdnshostresolver1 on --natdnsproxy1 off --cpuhotplug off --pae on --hpet on --hwvirtex on --nestedpaging on --largepages on --vtxvpid on --accelerate3d off --boot1 dvd --natlocalhostreachable1 on
+I0122 15:56:19.021013   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.021013   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.021013   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic1 nat --nictype1 virtio --cableconnected1 on
+I0122 15:56:19.057955   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.057955   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.057955   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storagectl minikube --name SATA --add sata --hostiocache on
+I0122 15:56:19.092984   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.092984   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.092984   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storageattach minikube --storagectl SATA --port 0 --device 0 --type dvddrive --medium C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\boot2docker.iso
+I0122 15:56:19.129298   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.129298   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.129298   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storageattach minikube --storagectl SATA --port 1 --device 0 --type hdd --medium C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\disk.vmdk
+I0122 15:56:19.175586   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.175586   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.175586   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
+I0122 15:56:19.211712   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.211712   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.211712   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountDir /
+I0122 15:56:19.245723   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.245723   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.245723   18380 main.go:141] libmachine: setting up shareDir '\\?\c:\Users' -> 'c/Users'
+I0122 15:56:19.245723   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe sharedfolder add minikube --name c/Users --hostpath \\?\c:\Users --automount
+I0122 15:56:19.281808   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.281808   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.281808   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe setextradata minikube VBoxInternal2/SharedFoldersEnableSymlinksCreate/c/Users 1
+I0122 15:56:19.317090   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.317090   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.317090   18380 main.go:141] libmachine: Starting the VM...
+I0122 15:56:19.317090   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:19.368553   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="poweroff"
+VMStateChangeTime="2024-01-22T12:56:18.965000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+nic2="none"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0122 15:56:19.368553   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.368553   18380 main.go:141] libmachine: Check network to re-create if needed...
+I0122 15:56:19.369074   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0122 15:56:19.432763   18380 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            12a84779-9b86-4494-b939-c958f3b02f6f
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::1ae5:6bbf:b5dc:6867
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            491376a6-921a-4195-87f2-9550664e6ed7
+DHCP:            Disabled
+IPAddress:       192.168.25.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::c4c9:59b5:5f1:4694
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:09
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter #5
+GUID:            565a6d78-4f2b-43b2-91c6-58b954d449b8
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::8ea2:ccfd:ff68:92d9
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:4a
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+
+Name:            VirtualBox Host-Only Ethernet Adapter #4
+GUID:            e35c2048-f13f-4210-a535-31616e21d983
+DHCP:            Disabled
+IPAddress:       192.168.10.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::894d:2cd8:73e:2693
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:14
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            ee97e820-fe2f-4785-b585-8d6901186532
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::27fc:ab5f:114a:a511
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0122 15:56:19.432763   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.521734   18380 main.go:141] libmachine: Searching for hostonly interface for IPv4: 192.168.59.1 and Mask: ffffff00
+I0122 15:56:19.521734   18380 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #5
+I0122 15:56:19.521734   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0122 15:56:19.552375   18380 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+Dhcpd IP:       192.168.59.3
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0122 15:56:19.552375   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.552375   18380 main.go:141] libmachine: Removing orphan DHCP servers...
+I0122 15:56:19.552375   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0122 15:56:19.608662   18380 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            12a84779-9b86-4494-b939-c958f3b02f6f
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::1ae5:6bbf:b5dc:6867
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            491376a6-921a-4195-87f2-9550664e6ed7
+DHCP:            Disabled
+IPAddress:       192.168.25.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::c4c9:59b5:5f1:4694
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:09
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter #5
+GUID:            565a6d78-4f2b-43b2-91c6-58b954d449b8
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::8ea2:ccfd:ff68:92d9
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:4a
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+
+Name:            VirtualBox Host-Only Ethernet Adapter #4
+GUID:            e35c2048-f13f-4210-a535-31616e21d983
+DHCP:            Disabled
+IPAddress:       192.168.10.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::894d:2cd8:73e:2693
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:14
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            ee97e820-fe2f-4785-b585-8d6901186532
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::27fc:ab5f:114a:a511
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0122 15:56:19.608662   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.608662   18380 main.go:141] libmachine: Adding/Modifying DHCP server "192.168.59.7" with address range "192.168.59.100" - "192.168.59.254"...
+I0122 15:56:19.608662   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0122 15:56:19.637798   18380 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+Dhcpd IP:       0.0.0.0
+LowerIPAddress: 0.0.0.0
+UpperIPAddress: 0.0.0.0
+NetworkMask:    0.0.0.0
+Enabled:        No
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 0.0.0.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+Dhcpd IP:       192.168.59.3
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0122 15:56:19.637798   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.637798   18380 main.go:141] libmachine: Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.
+I0122 15:56:19.637798   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe dhcpserver modify --netname HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5 --ip 192.168.59.7 --netmask 255.255.255.0 --lowerip 192.168.59.100 --upperip 192.168.59.254 --enable
+I0122 15:56:19.672371   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.672371   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.672371   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 VirtualBox Host-Only Ethernet Adapter #5 --cableconnected2 on
+I0122 15:56:19.734672   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.734672   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.734672   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --natpf1 delete ssh
+I0122 15:56:19.768084   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.768084   18380 main.go:141] libmachine: STDERR:
+{
+VBoxManage.exe: error: Code E_INVALIDARG (0x80070057) (extended info not available)
+VBoxManage.exe: error: Context: "RemoveRedirect(Bstr(ValueUnion.psz).raw())" at line 2111 of file VBoxManageModifyVM.cpp
+}
+I0122 15:56:19.768084   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --natpf1 ssh,tcp,127.0.0.1,50426,,22
+I0122 15:56:19.802508   18380 main.go:141] libmachine: STDOUT:
+{
+}
+I0122 15:56:19.802508   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:19.802508   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe startvm minikube --type headless
+I0122 15:56:24.255620   18380 main.go:141] libmachine: STDOUT:
+{
+Waiting for VM "minikube" to power on...
+VM "minikube" has been successfully started.
+}
+I0122 15:56:24.255620   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:24.255620   18380 main.go:141] libmachine: Checking vm logs: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\minikube\Logs\VBox.log
+I0122 15:56:24.266915   18380 main.go:141] libmachine: Waiting for an IP...
+I0122 15:56:24.266915   18380 main.go:141] libmachine: Getting to WaitForSSH function...
+I0122 15:56:24.268459   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:24.276676   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:24.276676   18380 main.go:141] libmachine: About to run SSH command:
+exit 0
+I0122 15:56:54.867255   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0122 15:56:54.867255   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.008389   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.008389   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.008389   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.062888   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.062888   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.062888   18380 main.go:141] libmachine: Host-only MAC: 080027fc8b99
+
+I0122 15:56:55.064953   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:55.065463   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:55.065463   18380 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0122 15:56:55.147647   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0122 15:56:55.147647   18380 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0122 15:56:55.147647   18380 main.go:141] libmachine: IP is 192.168.59.104
+I0122 15:56:55.147647   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.202767   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.202767   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.202767   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.254008   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.254008   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.254008   18380 main.go:141] libmachine: Host-only MAC: 080027fc8b99
+
+I0122 15:56:55.256060   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:55.256585   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:55.256585   18380 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0122 15:56:55.331239   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0122 15:56:55.331759   18380 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86391sec preferred_lft 86391sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 591sec preferred_lft 591sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0122 15:56:55.331759   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0122 15:56:55.400465   18380 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #3
+GUID:            12a84779-9b86-4494-b939-c958f3b02f6f
+DHCP:            Disabled
+IPAddress:       192.168.33.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::1ae5:6bbf:b5dc:6867
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:03
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #3
+
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            491376a6-921a-4195-87f2-9550664e6ed7
+DHCP:            Disabled
+IPAddress:       192.168.25.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::c4c9:59b5:5f1:4694
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:09
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter #5
+GUID:            565a6d78-4f2b-43b2-91c6-58b954d449b8
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::8ea2:ccfd:ff68:92d9
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:4a
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #5
+
+Name:            VirtualBox Host-Only Ethernet Adapter #4
+GUID:            e35c2048-f13f-4210-a535-31616e21d983
+DHCP:            Disabled
+IPAddress:       192.168.10.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::894d:2cd8:73e:2693
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:14
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #4
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            ee97e820-fe2f-4785-b585-8d6901186532
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::27fc:ab5f:114a:a511
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:16
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0122 15:56:55.400465   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.506076   18380 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #5
+I0122 15:56:55.506076   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.557910   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.557910   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.557910   18380 machine.go:88] provisioning docker machine ...
+I0122 15:56:55.557910   18380 buildroot.go:166] provisioning hostname "minikube"
+I0122 15:56:55.559965   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:55.559965   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:55.559965   18380 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0122 15:56:55.643362   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0122 15:56:55.645922   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:55.646432   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:55.646432   18380 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0122 15:56:55.721727   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0122 15:56:55.721727   18380 buildroot.go:172] set auth options {CertDir:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube CaCertPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem CaPrivateKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\server.pem ServerKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\server-key.pem ClientKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\cert.pem ServerCertSANs:[] StorePath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube}
+I0122 15:56:55.721727   18380 buildroot.go:174] setting up certificates
+I0122 15:56:55.721727   18380 provision.go:83] configureAuth start
+I0122 15:56:55.721727   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.785152   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.785152   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.785152   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:55.841549   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:55.841549   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:55.841549   18380 main.go:141] libmachine: Host-only MAC: 080027fc8b99
+
+I0122 15:56:55.843598   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:55.844252   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:55.844252   18380 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0122 15:56:55.915279   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0122 15:56:55.915279   18380 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86390sec preferred_lft 86390sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 590sec preferred_lft 590sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0122 15:56:55.915279   18380 provision.go:138] copyHostCerts
+I0122 15:56:55.915822   18380 exec_runner.go:144] found C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/ca.pem, removing ...
+I0122 15:56:55.915822   18380 exec_runner.go:203] rm: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\ca.pem
+I0122 15:56:55.915822   18380 exec_runner.go:151] cp: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem --> C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/ca.pem (1074 bytes)
+I0122 15:56:55.916860   18380 exec_runner.go:144] found C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/cert.pem, removing ...
+I0122 15:56:55.916860   18380 exec_runner.go:203] rm: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\cert.pem
+I0122 15:56:55.917373   18380 exec_runner.go:151] cp: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\cert.pem --> C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/cert.pem (1119 bytes)
+I0122 15:56:55.917889   18380 exec_runner.go:144] found C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/key.pem, removing ...
+I0122 15:56:55.917889   18380 exec_runner.go:203] rm: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\key.pem
+I0122 15:56:55.917889   18380 exec_runner.go:151] cp: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\key.pem --> C:\Users\kingl.LAPTOP-F94MTB1F\.minikube/key.pem (1675 bytes)
+I0122 15:56:55.918913   18380 provision.go:112] generating server cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\server.pem ca-key=C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem private-key=C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca-key.pem org=kingl.minikube san=[192.168.59.104 127.0.0.1 localhost 127.0.0.1 minikube minikube]
+I0122 15:56:56.225876   18380 provision.go:172] copyRemoteCerts
+I0122 15:56:56.228939   18380 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0122 15:56:56.228939   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:56:56.274684   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem --> /etc/docker/ca.pem (1074 bytes)
+I0122 15:56:56.294137   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\server.pem --> /etc/docker/server.pem (1200 bytes)
+I0122 15:56:56.311537   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\server-key.pem --> /etc/docker/server-key.pem (1675 bytes)
+I0122 15:56:56.329961   18380 provision.go:86] duration metric: configureAuth took 608.2346ms
+I0122 15:56:56.329961   18380 buildroot.go:189] setting minikube options for container-runtime
+I0122 15:56:56.330473   18380 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0122 15:56:56.333044   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:56.333553   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:56.333553   18380 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0122 15:56:56.407750   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0122 15:56:56.407750   18380 buildroot.go:70] root file system type: tmpfs
+I0122 15:56:56.407750   18380 provision.go:309] Updating docker unit: /lib/systemd/system/docker.service ...
+I0122 15:56:56.409819   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:56.410333   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:56.410333   18380 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0122 15:56:56.491522   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0122 15:56:56.493583   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:56.493583   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:56.493583   18380 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0122 15:56:57.071264   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: diff: can't stat '/lib/systemd/system/docker.service': No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+
+I0122 15:56:57.071264   18380 machine.go:91] provisioned docker machine in 1.5133537s
+I0122 15:56:57.071264   18380 client.go:171] LocalClient.Create took 46.0158309s
+I0122 15:56:57.071264   18380 start.go:167] duration metric: libmachine.API.Create for "minikube" took 46.0158309s
+I0122 15:56:57.071264   18380 start.go:300] post-start starting for "minikube" (driver="virtualbox")
+I0122 15:56:57.071264   18380 start.go:329] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0122 15:56:57.074351   18380 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0122 15:56:57.074351   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:56:57.119751   18380 ssh_runner.go:195] Run: cat /etc/os-release
+I0122 15:56:57.122315   18380 info.go:137] Remote host: Buildroot 2021.02.12
+I0122 15:56:57.122315   18380 filesync.go:126] Scanning C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\addons for local assets ...
+I0122 15:56:57.122315   18380 filesync.go:126] Scanning C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\files for local assets ...
+I0122 15:56:57.122825   18380 start.go:303] post-start completed in 51.5608ms
+I0122 15:56:57.123858   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:57.168307   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:57.168307   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:57.168307   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:57.211219   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:57.211219   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:57.211219   18380 main.go:141] libmachine: Host-only MAC: 080027fc8b99
+
+I0122 15:56:57.213279   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:57.213279   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:57.213279   18380 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0122 15:56:57.283680   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86389sec preferred_lft 86389sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 589sec preferred_lft 589sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:77:50:18:ed brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0122 15:56:57.283680   18380 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86389sec preferred_lft 86389sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 589sec preferred_lft 589sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:77:50:18:ed brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0122 15:56:57.284187   18380 profile.go:148] Saving config to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\config.json ...
+I0122 15:56:57.290355   18380 start.go:128] duration metric: createHost completed in 46.2359382s
+I0122 15:56:57.291884   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:57.291884   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:57.291884   18380 main.go:141] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0122 15:56:57.371150   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1705928216.869698043
+
+I0122 15:56:57.371150   18380 fix.go:206] guest clock: 1705928216.869698043
+I0122 15:56:57.371150   18380 fix.go:219] Guest: 2024-01-22 15:56:56.869698043 +0300 MSK Remote: 2024-01-22 15:56:57.2903559 +0300 MSK m=+46.826421501 (delta=-420.657857ms)
+I0122 15:56:57.371150   18380 fix.go:190] guest clock delta is within tolerance: -420.657857ms
+I0122 15:56:57.371150   18380 start.go:83] releasing machines lock for "minikube", held for 46.3172418s
+I0122 15:56:57.371150   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:57.418685   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:57.418685   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:57.418685   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:56:57.463120   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:56:57.463120   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:56:57.463120   18380 main.go:141] libmachine: Host-only MAC: 080027fc8b99
+
+I0122 15:56:57.464654   18380 main.go:141] libmachine: Using SSH client type: native
+I0122 15:56:57.465164   18380 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0x10247e0] 0x1027320 <nil>  [] 0s} 127.0.0.1 50426 <nil> <nil>}
+I0122 15:56:57.465164   18380 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0122 15:56:57.534560   18380 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86389sec preferred_lft 86389sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 589sec preferred_lft 589sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:77:50:18:ed brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0122 15:56:57.534560   18380 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:11:aa:7c brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86389sec preferred_lft 86389sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:fc:8b:99 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.104/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 589sec preferred_lft 589sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:77:50:18:ed brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0122 15:56:57.535583   18380 ssh_runner.go:195] Run: curl -sS -m 2 https://registry.k8s.io/
+I0122 15:56:57.535583   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:56:57.538139   18380 ssh_runner.go:195] Run: cat /version.json
+I0122 15:56:57.538139   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:56:59.646625   18380 ssh_runner.go:235] Completed: cat /version.json: (2.1084864s)
+I0122 15:56:59.646625   18380 ssh_runner.go:235] Completed: curl -sS -m 2 https://registry.k8s.io/: (2.1110423s)
+W0122 15:56:59.646625   18380 start.go:840] [curl -sS -m 2 https://registry.k8s.io/] failed: curl -sS -m 2 https://registry.k8s.io/: Process exited with status 28
+stdout:
+
+stderr:
+curl: (28) Resolving timed out after 2000 milliseconds
+W0122 15:56:59.646625   18380 out.go:239] ! This VM is having trouble accessing https://registry.k8s.io
+W0122 15:56:59.647134   18380 out.go:239] * To pull new external images, you may need to configure a proxy: https://minikube.sigs.k8s.io/docs/reference/networking/proxy/
+I0122 15:56:59.649184   18380 ssh_runner.go:195] Run: systemctl --version
+I0122 15:56:59.655299   18380 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0122 15:56:59.658865   18380 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0122 15:56:59.661411   18380 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%!p(MISSING), " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0122 15:56:59.673138   18380 cni.go:262] disabled [/etc/cni/net.d/87-podman-bridge.conflist] bridge cni config(s)
+I0122 15:56:59.673138   18380 start.go:472] detecting cgroup driver to use...
+I0122 15:56:59.673138   18380 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0122 15:56:59.688908   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.9"|' /etc/containerd/config.toml"
+I0122 15:56:59.699109   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0122 15:56:59.706743   18380 containerd.go:145] configuring containerd to use "cgroupfs" as cgroup driver...
+I0122 15:56:59.709808   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0122 15:56:59.720499   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0122 15:56:59.731229   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0122 15:56:59.740920   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0122 15:56:59.749572   18380 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0122 15:56:59.758760   18380 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0122 15:56:59.767934   18380 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0122 15:56:59.776613   18380 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0122 15:56:59.787872   18380 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0122 15:56:59.918831   18380 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0122 15:56:59.931043   18380 start.go:472] detecting cgroup driver to use...
+I0122 15:56:59.934105   18380 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0122 15:56:59.955011   18380 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0122 15:56:59.973388   18380 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0122 15:56:59.990187   18380 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0122 15:57:00.001905   18380 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0122 15:57:00.016276   18380 ssh_runner.go:195] Run: sudo systemctl stop -f crio
+I0122 15:57:00.037705   18380 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0122 15:57:00.046375   18380 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0122 15:57:00.060673   18380 ssh_runner.go:195] Run: which cri-dockerd
+I0122 15:57:00.066285   18380 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0122 15:57:00.073458   18380 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (189 bytes)
+I0122 15:57:00.086206   18380 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0122 15:57:00.210956   18380 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0122 15:57:00.341314   18380 docker.go:560] configuring docker to use "cgroupfs" as cgroup driver...
+I0122 15:57:00.341314   18380 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (130 bytes)
+I0122 15:57:00.355072   18380 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0122 15:57:00.480267   18380 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0122 15:57:01.706897   18380 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.2266297s)
+I0122 15:57:01.709446   18380 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0122 15:57:01.839766   18380 ssh_runner.go:195] Run: sudo systemctl unmask cri-docker.socket
+I0122 15:57:01.971143   18380 ssh_runner.go:195] Run: sudo systemctl enable cri-docker.socket
+I0122 15:57:02.103538   18380 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0122 15:57:02.238447   18380 ssh_runner.go:195] Run: sudo systemctl restart cri-docker.socket
+I0122 15:57:02.252726   18380 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0122 15:57:02.388693   18380 ssh_runner.go:195] Run: sudo systemctl restart cri-docker
+I0122 15:57:02.437600   18380 start.go:519] Will wait 60s for socket path /var/run/cri-dockerd.sock
+I0122 15:57:02.440661   18380 ssh_runner.go:195] Run: stat /var/run/cri-dockerd.sock
+I0122 15:57:02.445778   18380 start.go:540] Will wait 60s for crictl version
+I0122 15:57:02.448349   18380 ssh_runner.go:195] Run: which crictl
+I0122 15:57:02.453957   18380 ssh_runner.go:195] Run: sudo /usr/bin/crictl version
+I0122 15:57:02.495252   18380 start.go:556] Version:  0.1.0
+RuntimeName:  docker
+RuntimeVersion:  24.0.7
+RuntimeApiVersion:  v1
+I0122 15:57:02.497811   18380 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0122 15:57:02.517167   18380 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0122 15:57:02.538235   18380 out.go:204] * Подготавливается Kubernetes v1.28.3 на Docker 24.0.7 ...
+I0122 15:57:02.713472   18380 ssh_runner.go:195] Run: grep 192.168.59.1	host.minikube.internal$ /etc/hosts
+I0122 15:57:02.716522   18380 ssh_runner.go:195] Run: /bin/bash -c "{ grep -v $'\thost.minikube.internal$' "/etc/hosts"; echo "192.168.59.1	host.minikube.internal"; } > /tmp/h.$$; sudo cp /tmp/h.$$ "/etc/hosts""
+I0122 15:57:02.725175   18380 preload.go:132] Checking if preload exists for k8s version v1.28.3 and runtime docker
+I0122 15:57:02.727724   18380 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0122 15:57:02.739450   18380 docker.go:671] Got preloaded images: 
+I0122 15:57:02.739450   18380 docker.go:677] registry.k8s.io/kube-apiserver:v1.28.3 wasn't preloaded
+I0122 15:57:02.742036   18380 ssh_runner.go:195] Run: sudo cat /var/lib/docker/image/overlay2/repositories.json
+I0122 15:57:02.750684   18380 ssh_runner.go:195] Run: which lz4
+I0122 15:57:02.767702   18380 ssh_runner.go:195] Run: stat -c "%!s(MISSING) %!y(MISSING)" /preloaded.tar.lz4
+I0122 15:57:02.772794   18380 ssh_runner.go:352] existence check for /preloaded.tar.lz4: stat -c "%!s(MISSING) %!y(MISSING)" /preloaded.tar.lz4: Process exited with status 1
+stdout:
+
+stderr:
+stat: cannot statx '/preloaded.tar.lz4': No such file or directory
+I0122 15:57:02.772794   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.28.3-docker-overlay2-amd64.tar.lz4 --> /preloaded.tar.lz4 (422944352 bytes)
+I0122 15:57:06.478551   18380 docker.go:635] Took 3.713911 seconds to copy over tarball
+I0122 15:57:06.481104   18380 ssh_runner.go:195] Run: sudo tar -I lz4 -C /var -xf /preloaded.tar.lz4
+I0122 15:57:10.273386   18380 ssh_runner.go:235] Completed: sudo tar -I lz4 -C /var -xf /preloaded.tar.lz4: (3.7922812s)
+I0122 15:57:10.273386   18380 ssh_runner.go:146] rm: /preloaded.tar.lz4
+I0122 15:57:10.310185   18380 ssh_runner.go:195] Run: sudo cat /var/lib/docker/image/overlay2/repositories.json
+I0122 15:57:10.316812   18380 ssh_runner.go:362] scp memory --> /var/lib/docker/image/overlay2/repositories.json (2629 bytes)
+I0122 15:57:10.341324   18380 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0122 15:57:10.480456   18380 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0122 15:57:11.809375   18380 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.3289191s)
+I0122 15:57:11.814496   18380 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0122 15:57:11.837431   18380 docker.go:671] Got preloaded images: -- stdout --
+registry.k8s.io/kube-apiserver:v1.28.3
+registry.k8s.io/kube-controller-manager:v1.28.3
+registry.k8s.io/kube-scheduler:v1.28.3
+registry.k8s.io/kube-proxy:v1.28.3
+registry.k8s.io/etcd:3.5.9-0
+registry.k8s.io/coredns/coredns:v1.10.1
+registry.k8s.io/pause:3.9
+gcr.io/k8s-minikube/storage-provisioner:v5
+
+-- /stdout --
+I0122 15:57:11.837431   18380 cache_images.go:84] Images are preloaded, skipping loading
+I0122 15:57:11.842573   18380 ssh_runner.go:195] Run: docker info --format {{.CgroupDriver}}
+I0122 15:57:11.862941   18380 cni.go:84] Creating CNI manager for ""
+I0122 15:57:11.862941   18380 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0122 15:57:11.862941   18380 kubeadm.go:87] Using pod CIDR: 10.244.0.0/16
+I0122 15:57:11.862941   18380 kubeadm.go:176] kubeadm options: {CertDir:/var/lib/minikube/certs ServiceCIDR:10.96.0.0/12 PodSubnet:10.244.0.0/16 AdvertiseAddress:192.168.59.104 APIServerPort:8443 KubernetesVersion:v1.28.3 EtcdDataDir:/var/lib/minikube/etcd EtcdExtraArgs:map[] ClusterName:minikube NodeName:minikube DNSDomain:cluster.local CRISocket:/var/run/cri-dockerd.sock ImageRepository: ComponentOptions:[{Component:apiServer ExtraArgs:map[enable-admission-plugins:NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota] Pairs:map[certSANs:["127.0.0.1", "localhost", "192.168.59.104"]]} {Component:controllerManager ExtraArgs:map[allocate-node-cidrs:true leader-elect:false] Pairs:map[]} {Component:scheduler ExtraArgs:map[leader-elect:false] Pairs:map[]}] FeatureArgs:map[] NodeIP:192.168.59.104 CgroupDriver:cgroupfs ClientCAFile:/var/lib/minikube/certs/ca.crt StaticPodPath:/etc/kubernetes/manifests ControlPlaneAddress:control-plane.minikube.internal KubeProxyOptions:map[] ResolvConfSearchRegression:false KubeletConfigOpts:map[hairpinMode:hairpin-veth runtimeRequestTimeout:15m] PrependCriSocketUnix:true}
+I0122 15:57:11.862941   18380 kubeadm.go:181] kubeadm config:
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: 192.168.59.104
+  bindPort: 8443
+bootstrapTokens:
+  - groups:
+      - system:bootstrappers:kubeadm:default-node-token
+    ttl: 24h0m0s
+    usages:
+      - signing
+      - authentication
+nodeRegistration:
+  criSocket: unix:///var/run/cri-dockerd.sock
+  name: "minikube"
+  kubeletExtraArgs:
+    node-ip: 192.168.59.104
+  taints: []
+---
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+apiServer:
+  certSANs: ["127.0.0.1", "localhost", "192.168.59.104"]
+  extraArgs:
+    enable-admission-plugins: "NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota"
+controllerManager:
+  extraArgs:
+    allocate-node-cidrs: "true"
+    leader-elect: "false"
+scheduler:
+  extraArgs:
+    leader-elect: "false"
+certificatesDir: /var/lib/minikube/certs
+clusterName: mk
+controlPlaneEndpoint: control-plane.minikube.internal:8443
+etcd:
+  local:
+    dataDir: /var/lib/minikube/etcd
+    extraArgs:
+      proxy-refresh-interval: "70000"
+kubernetesVersion: v1.28.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: "10.244.0.0/16"
+  serviceSubnet: 10.96.0.0/12
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+authentication:
+  x509:
+    clientCAFile: /var/lib/minikube/certs/ca.crt
+cgroupDriver: cgroupfs
+hairpinMode: hairpin-veth
+runtimeRequestTimeout: 15m
+clusterDomain: "cluster.local"
+# disable disk resource management by default
+imageGCHighThresholdPercent: 100
+evictionHard:
+  nodefs.available: "0%!"(MISSING)
+  nodefs.inodesFree: "0%!"(MISSING)
+  imagefs.available: "0%!"(MISSING)
+failSwapOn: false
+staticPodPath: /etc/kubernetes/manifests
+---
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+kind: KubeProxyConfiguration
+clusterCIDR: "10.244.0.0/16"
+metricsBindAddress: 0.0.0.0:10249
+conntrack:
+  maxPerCore: 0
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_established"
+  tcpEstablishedTimeout: 0s
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_close"
+  tcpCloseWaitTimeout: 0s
+
+I0122 15:57:11.862941   18380 kubeadm.go:976] kubelet [Unit]
+Wants=docker.socket
+
+[Service]
+ExecStart=
+ExecStart=/var/lib/minikube/binaries/v1.28.3/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime-endpoint=unix:///var/run/cri-dockerd.sock --hostname-override=minikube --kubeconfig=/etc/kubernetes/kubelet.conf --node-ip=192.168.59.104
+
+[Install]
+ config:
+{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:}
+I0122 15:57:11.866523   18380 ssh_runner.go:195] Run: sudo ls /var/lib/minikube/binaries/v1.28.3
+I0122 15:57:11.872647   18380 binaries.go:44] Found k8s binaries, skipping transfer
+I0122 15:57:11.874688   18380 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/kubelet.service.d /lib/systemd/system /var/tmp/minikube
+I0122 15:57:11.880298   18380 ssh_runner.go:362] scp memory --> /etc/systemd/system/kubelet.service.d/10-kubeadm.conf (371 bytes)
+I0122 15:57:11.893143   18380 ssh_runner.go:362] scp memory --> /lib/systemd/system/kubelet.service (352 bytes)
+I0122 15:57:11.903342   18380 ssh_runner.go:362] scp memory --> /var/tmp/minikube/kubeadm.yaml.new (2097 bytes)
+I0122 15:57:11.916078   18380 ssh_runner.go:195] Run: grep 192.168.59.104	control-plane.minikube.internal$ /etc/hosts
+I0122 15:57:11.918621   18380 ssh_runner.go:195] Run: /bin/bash -c "{ grep -v $'\tcontrol-plane.minikube.internal$' "/etc/hosts"; echo "192.168.59.104	control-plane.minikube.internal"; } > /tmp/h.$$; sudo cp /tmp/h.$$ "/etc/hosts""
+I0122 15:57:11.926274   18380 certs.go:56] Setting up C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube for IP: 192.168.59.104
+I0122 15:57:11.926274   18380 certs.go:190] acquiring lock for shared ca certs: {Name:mkdcade4e088a3ddd4bcd92fed3f56fd9abd50ff Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:11.926274   18380 certs.go:199] skipping minikubeCA CA generation: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\ca.key
+I0122 15:57:11.926788   18380 certs.go:199] skipping proxyClientCA CA generation: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\proxy-client-ca.key
+I0122 15:57:11.927319   18380 certs.go:319] generating minikube-user signed cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.key
+I0122 15:57:11.927319   18380 crypto.go:68] Generating cert C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.crt with IP's: []
+I0122 15:57:12.010010   18380 crypto.go:156] Writing cert to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.crt ...
+I0122 15:57:12.010010   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.crt: {Name:mk605d0de18fcd73c4e971b774c51a5a6bd271ba Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.010518   18380 crypto.go:164] Writing key to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.key ...
+I0122 15:57:12.010518   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\client.key: {Name:mk647af7358010224474113cc17f2d4bccd9cb1f Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.011030   18380 certs.go:319] generating minikube signed cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key.d80ab877
+I0122 15:57:12.011030   18380 crypto.go:68] Generating cert C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt.d80ab877 with IP's: [192.168.59.104 10.96.0.1 127.0.0.1 10.0.0.1]
+I0122 15:57:12.093212   18380 crypto.go:156] Writing cert to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt.d80ab877 ...
+I0122 15:57:12.093212   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt.d80ab877: {Name:mk2b94a182eb03b74afd88263f617342d8917ab2 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.093735   18380 crypto.go:164] Writing key to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key.d80ab877 ...
+I0122 15:57:12.094247   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key.d80ab877: {Name:mk878aba7cb7ccd1588df5978fd97b744275725c Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.094247   18380 certs.go:337] copying C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt.d80ab877 -> C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt
+I0122 15:57:12.102943   18380 certs.go:341] copying C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key.d80ab877 -> C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key
+I0122 15:57:12.103453   18380 certs.go:319] generating aggregator signed cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.key
+I0122 15:57:12.103974   18380 crypto.go:68] Generating cert C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.crt with IP's: []
+I0122 15:57:12.171970   18380 crypto.go:156] Writing cert to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.crt ...
+I0122 15:57:12.171970   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.crt: {Name:mk80cfbd53b223258a2f73956de123c8156644f9 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.172478   18380 crypto.go:164] Writing key to C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.key ...
+I0122 15:57:12.172478   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.key: {Name:mka8c03507a8ca395b88b024186d709aa8dfba6d Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:12.182175   18380 certs.go:437] found cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca-key.pem (1679 bytes)
+I0122 15:57:12.182175   18380 certs.go:437] found cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\ca.pem (1074 bytes)
+I0122 15:57:12.182175   18380 certs.go:437] found cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\cert.pem (1119 bytes)
+I0122 15:57:12.182692   18380 certs.go:437] found cert: C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\certs\key.pem (1675 bytes)
+I0122 15:57:12.184230   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.crt --> /var/lib/minikube/certs/apiserver.crt (1399 bytes)
+I0122 15:57:12.203099   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\apiserver.key --> /var/lib/minikube/certs/apiserver.key (1679 bytes)
+I0122 15:57:12.219900   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.crt --> /var/lib/minikube/certs/proxy-client.crt (1147 bytes)
+I0122 15:57:12.235178   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\profiles\minikube\proxy-client.key --> /var/lib/minikube/certs/proxy-client.key (1675 bytes)
+I0122 15:57:12.249415   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\ca.crt --> /var/lib/minikube/certs/ca.crt (1111 bytes)
+I0122 15:57:12.263647   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\ca.key --> /var/lib/minikube/certs/ca.key (1679 bytes)
+I0122 15:57:12.277884   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\proxy-client-ca.crt --> /var/lib/minikube/certs/proxy-client-ca.crt (1119 bytes)
+I0122 15:57:12.292147   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\proxy-client-ca.key --> /var/lib/minikube/certs/proxy-client-ca.key (1675 bytes)
+I0122 15:57:12.306910   18380 ssh_runner.go:362] scp C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\ca.crt --> /usr/share/ca-certificates/minikubeCA.pem (1111 bytes)
+I0122 15:57:12.320133   18380 ssh_runner.go:362] scp memory --> /var/lib/minikube/kubeconfig (738 bytes)
+I0122 15:57:12.334902   18380 ssh_runner.go:195] Run: openssl version
+I0122 15:57:12.341027   18380 ssh_runner.go:195] Run: sudo /bin/bash -c "test -s /usr/share/ca-certificates/minikubeCA.pem && ln -fs /usr/share/ca-certificates/minikubeCA.pem /etc/ssl/certs/minikubeCA.pem"
+I0122 15:57:12.349681   18380 ssh_runner.go:195] Run: ls -la /usr/share/ca-certificates/minikubeCA.pem
+I0122 15:57:12.351716   18380 certs.go:480] hashing: -rw-r--r-- 1 root root 1111 Jan 17 12:31 /usr/share/ca-certificates/minikubeCA.pem
+I0122 15:57:12.354270   18380 ssh_runner.go:195] Run: openssl x509 -hash -noout -in /usr/share/ca-certificates/minikubeCA.pem
+I0122 15:57:12.360899   18380 ssh_runner.go:195] Run: sudo /bin/bash -c "test -L /etc/ssl/certs/b5213941.0 || ln -fs /etc/ssl/certs/minikubeCA.pem /etc/ssl/certs/b5213941.0"
+I0122 15:57:12.369544   18380 ssh_runner.go:195] Run: ls /var/lib/minikube/certs/etcd
+I0122 15:57:12.371578   18380 certs.go:353] certs directory doesn't exist, likely first start: ls /var/lib/minikube/certs/etcd: Process exited with status 2
+stdout:
+
+stderr:
+ls: cannot access '/var/lib/minikube/certs/etcd': No such file or directory
+I0122 15:57:12.372086   18380 kubeadm.go:404] StartCluster: {Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.32.1-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.42@sha256:d35ac07dfda971cabee05e0deca8aeac772f885a5348e1a0c0b0a36db20fcfc0 Memory:3500 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:0 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.28.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.104 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\kingl.LAPTOP-F94MTB1F:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 AutoPauseInterval:1m0s GPUs:}
+I0122 15:57:12.374120   18380 ssh_runner.go:195] Run: docker ps --filter status=paused --filter=name=k8s_.*_(kube-system)_ --format={{.ID}}
+I0122 15:57:12.387354   18380 ssh_runner.go:195] Run: sudo ls /var/lib/kubelet/kubeadm-flags.env /var/lib/kubelet/config.yaml /var/lib/minikube/etcd
+I0122 15:57:12.398110   18380 ssh_runner.go:195] Run: sudo cp /var/tmp/minikube/kubeadm.yaml.new /var/tmp/minikube/kubeadm.yaml
+I0122 15:57:12.412917   18380 ssh_runner.go:195] Run: sudo ls -la /etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf
+I0122 15:57:12.418509   18380 kubeadm.go:152] config check failed, skipping stale config cleanup: sudo ls -la /etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf: Process exited with status 2
+stdout:
+
+stderr:
+ls: cannot access '/etc/kubernetes/admin.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/kubelet.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/controller-manager.conf': No such file or directory
+ls: cannot access '/etc/kubernetes/scheduler.conf': No such file or directory
+I0122 15:57:12.419017   18380 ssh_runner.go:286] Start: /bin/bash -c "sudo env PATH="/var/lib/minikube/binaries/v1.28.3:$PATH" kubeadm init --config /var/tmp/minikube/kubeadm.yaml  --ignore-preflight-errors=DirAvailable--etc-kubernetes-manifests,DirAvailable--var-lib-minikube,DirAvailable--var-lib-minikube-etcd,FileAvailable--etc-kubernetes-manifests-kube-scheduler.yaml,FileAvailable--etc-kubernetes-manifests-kube-apiserver.yaml,FileAvailable--etc-kubernetes-manifests-kube-controller-manager.yaml,FileAvailable--etc-kubernetes-manifests-etcd.yaml,Port-10250,Swap,NumCPU,Mem"
+I0122 15:57:12.550568   18380 kubeadm.go:322] 	[WARNING Service-Kubelet]: kubelet service is not enabled, please run 'systemctl enable kubelet.service'
+I0122 15:57:21.923029   18380 kubeadm.go:322] [init] Using Kubernetes version: v1.28.3
+I0122 15:57:21.923029   18380 kubeadm.go:322] [preflight] Running pre-flight checks
+I0122 15:57:21.923029   18380 kubeadm.go:322] [preflight] Pulling images required for setting up a Kubernetes cluster
+I0122 15:57:21.923029   18380 kubeadm.go:322] [preflight] This might take a minute or two, depending on the speed of your internet connection
+I0122 15:57:21.923537   18380 kubeadm.go:322] [preflight] You can also perform this action in beforehand using 'kubeadm config images pull'
+I0122 15:57:21.923537   18380 kubeadm.go:322] [certs] Using certificateDir folder "/var/lib/minikube/certs"
+I0122 15:57:21.930164   18380 out.go:204]   - Generating certificates and keys ...
+I0122 15:57:21.930671   18380 kubeadm.go:322] [certs] Using existing ca certificate authority
+I0122 15:57:21.930671   18380 kubeadm.go:322] [certs] Using existing apiserver certificate and key on disk
+I0122 15:57:21.930671   18380 kubeadm.go:322] [certs] Generating "apiserver-kubelet-client" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] Generating "front-proxy-ca" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] Generating "front-proxy-client" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] Generating "etcd/ca" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] Generating "etcd/server" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] etcd/server serving cert is signed for DNS names [localhost minikube] and IPs [192.168.59.104 127.0.0.1 ::1]
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] Generating "etcd/peer" certificate and key
+I0122 15:57:21.931181   18380 kubeadm.go:322] [certs] etcd/peer serving cert is signed for DNS names [localhost minikube] and IPs [192.168.59.104 127.0.0.1 ::1]
+I0122 15:57:21.931694   18380 kubeadm.go:322] [certs] Generating "etcd/healthcheck-client" certificate and key
+I0122 15:57:21.931694   18380 kubeadm.go:322] [certs] Generating "apiserver-etcd-client" certificate and key
+I0122 15:57:21.931694   18380 kubeadm.go:322] [certs] Generating "sa" key and public key
+I0122 15:57:21.931694   18380 kubeadm.go:322] [kubeconfig] Using kubeconfig folder "/etc/kubernetes"
+I0122 15:57:21.931694   18380 kubeadm.go:322] [kubeconfig] Writing "admin.conf" kubeconfig file
+I0122 15:57:21.931694   18380 kubeadm.go:322] [kubeconfig] Writing "kubelet.conf" kubeconfig file
+I0122 15:57:21.931694   18380 kubeadm.go:322] [kubeconfig] Writing "controller-manager.conf" kubeconfig file
+I0122 15:57:21.931694   18380 kubeadm.go:322] [kubeconfig] Writing "scheduler.conf" kubeconfig file
+I0122 15:57:21.932203   18380 kubeadm.go:322] [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"
+I0122 15:57:21.932203   18380 kubeadm.go:322] [control-plane] Using manifest folder "/etc/kubernetes/manifests"
+I0122 15:57:21.932711   18380 out.go:204]   - Booting up control plane ...
+I0122 15:57:21.932711   18380 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-apiserver"
+I0122 15:57:21.932711   18380 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-controller-manager"
+I0122 15:57:21.932711   18380 kubeadm.go:322] [control-plane] Creating static Pod manifest for "kube-scheduler"
+I0122 15:57:21.933228   18380 kubeadm.go:322] [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+I0122 15:57:21.933228   18380 kubeadm.go:322] [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+I0122 15:57:21.933228   18380 kubeadm.go:322] [kubelet-start] Starting the kubelet
+I0122 15:57:21.933228   18380 kubeadm.go:322] [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s
+I0122 15:57:21.933228   18380 kubeadm.go:322] [apiclient] All control plane components are healthy after 6.005934 seconds
+I0122 15:57:21.933736   18380 kubeadm.go:322] [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace
+I0122 15:57:21.933736   18380 kubeadm.go:322] [kubelet] Creating a ConfigMap "kubelet-config" in namespace kube-system with the configuration for the kubelets in the cluster
+I0122 15:57:21.933736   18380 kubeadm.go:322] [upload-certs] Skipping phase. Please see --upload-certs
+I0122 15:57:21.933736   18380 kubeadm.go:322] [mark-control-plane] Marking the node minikube as control-plane by adding the labels: [node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]
+I0122 15:57:21.933736   18380 kubeadm.go:322] [bootstrap-token] Using token: yua57l.auyil98tq1ko8ikv
+I0122 15:57:21.934243   18380 out.go:204]   - Configuring RBAC rules ...
+I0122 15:57:21.934750   18380 kubeadm.go:322] [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles
+I0122 15:57:21.934750   18380 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to get nodes
+I0122 15:57:21.934750   18380 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials
+I0122 15:57:21.934750   18380 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token
+I0122 15:57:21.935260   18380 kubeadm.go:322] [bootstrap-token] Configured RBAC rules to allow certificate rotation for all node client certificates in the cluster
+I0122 15:57:21.935260   18380 kubeadm.go:322] [bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace
+I0122 15:57:21.935260   18380 kubeadm.go:322] [kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key
+I0122 15:57:21.935260   18380 kubeadm.go:322] [addons] Applied essential addon: CoreDNS
+I0122 15:57:21.935260   18380 kubeadm.go:322] [addons] Applied essential addon: kube-proxy
+I0122 15:57:21.935260   18380 kubeadm.go:322] 
+I0122 15:57:21.935260   18380 kubeadm.go:322] Your Kubernetes control-plane has initialized successfully!
+I0122 15:57:21.935260   18380 kubeadm.go:322] 
+I0122 15:57:21.935260   18380 kubeadm.go:322] To start using your cluster, you need to run the following as a regular user:
+I0122 15:57:21.935260   18380 kubeadm.go:322] 
+I0122 15:57:21.935260   18380 kubeadm.go:322]   mkdir -p $HOME/.kube
+I0122 15:57:21.935771   18380 kubeadm.go:322]   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+I0122 15:57:21.935771   18380 kubeadm.go:322]   sudo chown $(id -u):$(id -g) $HOME/.kube/config
+I0122 15:57:21.935771   18380 kubeadm.go:322] 
+I0122 15:57:21.935771   18380 kubeadm.go:322] Alternatively, if you are the root user, you can run:
+I0122 15:57:21.935771   18380 kubeadm.go:322] 
+I0122 15:57:21.935771   18380 kubeadm.go:322]   export KUBECONFIG=/etc/kubernetes/admin.conf
+I0122 15:57:21.935771   18380 kubeadm.go:322] 
+I0122 15:57:21.935771   18380 kubeadm.go:322] You should now deploy a pod network to the cluster.
+I0122 15:57:21.935771   18380 kubeadm.go:322] Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:
+I0122 15:57:21.935771   18380 kubeadm.go:322]   https://kubernetes.io/docs/concepts/cluster-administration/addons/
+I0122 15:57:21.935771   18380 kubeadm.go:322] 
+I0122 15:57:21.935771   18380 kubeadm.go:322] You can now join any number of control-plane nodes by copying certificate authorities
+I0122 15:57:21.935771   18380 kubeadm.go:322] and service account keys on each node and then running the following as root:
+I0122 15:57:21.935771   18380 kubeadm.go:322] 
+I0122 15:57:21.936303   18380 kubeadm.go:322]   kubeadm join control-plane.minikube.internal:8443 --token yua57l.auyil98tq1ko8ikv \
+I0122 15:57:21.936303   18380 kubeadm.go:322] 	--discovery-token-ca-cert-hash sha256:3c841762738e117a8c2aa02e1473d6baf8b0092de00bbb0691059f2ace5b7142 \
+I0122 15:57:21.936303   18380 kubeadm.go:322] 	--control-plane 
+I0122 15:57:21.936303   18380 kubeadm.go:322] 
+I0122 15:57:21.936303   18380 kubeadm.go:322] Then you can join any number of worker nodes by running the following on each as root:
+I0122 15:57:21.936303   18380 kubeadm.go:322] 
+I0122 15:57:21.936303   18380 kubeadm.go:322] kubeadm join control-plane.minikube.internal:8443 --token yua57l.auyil98tq1ko8ikv \
+I0122 15:57:21.936303   18380 kubeadm.go:322] 	--discovery-token-ca-cert-hash sha256:3c841762738e117a8c2aa02e1473d6baf8b0092de00bbb0691059f2ace5b7142 
+I0122 15:57:21.936303   18380 cni.go:84] Creating CNI manager for ""
+I0122 15:57:21.936303   18380 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0122 15:57:21.936810   18380 out.go:177] * Configuring bridge CNI (Container Networking Interface) ...
+I0122 15:57:21.940381   18380 ssh_runner.go:195] Run: sudo mkdir -p /etc/cni/net.d
+I0122 15:57:21.948023   18380 ssh_runner.go:362] scp memory --> /etc/cni/net.d/1-k8s.conflist (457 bytes)
+I0122 15:57:21.964818   18380 ssh_runner.go:195] Run: /bin/bash -c "cat /proc/$(pgrep kube-apiserver)/oom_adj"
+I0122 15:57:21.967874   18380 ssh_runner.go:195] Run: sudo /var/lib/minikube/binaries/v1.28.3/kubectl create clusterrolebinding minikube-rbac --clusterrole=cluster-admin --serviceaccount=kube-system:default --kubeconfig=/var/lib/minikube/kubeconfig
+I0122 15:57:21.967874   18380 ssh_runner.go:195] Run: sudo /var/lib/minikube/binaries/v1.28.3/kubectl label nodes minikube.k8s.io/version=v1.32.0 minikube.k8s.io/commit=8220a6eb95f0a4d75f7f2d7b14cef975f050512d minikube.k8s.io/name=minikube minikube.k8s.io/updated_at=2024_01_22T15_57_21_0700 minikube.k8s.io/primary=true --all --overwrite --kubeconfig=/var/lib/minikube/kubeconfig
+I0122 15:57:21.991779   18380 ops.go:34] apiserver oom_adj: -16
+I0122 15:57:22.194611   18380 kubeadm.go:1081] duration metric: took 229.2854ms to wait for elevateKubeSystemPrivileges.
+I0122 15:57:22.194611   18380 kubeadm.go:406] StartCluster complete in 9.8225256s
+I0122 15:57:22.194611   18380 settings.go:142] acquiring lock: {Name:mk4caa5762e29173996e7bd2cf56313efd3cb2e8 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:22.194611   18380 settings.go:150] Updating kubeconfig:  C:\Users\kingl.LAPTOP-F94MTB1F\.kube\config
+I0122 15:57:22.195636   18380 lock.go:35] WriteFile acquiring C:\Users\kingl.LAPTOP-F94MTB1F\.kube\config: {Name:mk44a896cc0b162ccf35600d5aff0e626f09cf0f Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0122 15:57:22.196145   18380 ssh_runner.go:195] Run: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml"
+I0122 15:57:22.196145   18380 global.go:111] Querying for installed drivers using PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\WireGuard\;C:\Program Files\Vagrant\bin;C:\ProgramData\chocolatey\bin;C:\Users\kingl.LAPTOP-F94MTB1F\AppData\Local\Microsoft\WindowsApps
+I0122 15:57:22.196145   18380 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.28.3
+I0122 15:57:22.196655   18380 addons.go:499] enable addons start: toEnable=map[ambassador:false auto-pause:false cloud-spanner:false csi-hostpath-driver:false dashboard:false default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false headlamp:false helm-tiller:false inaccel:false ingress:false ingress-dns:false inspektor-gadget:false istio:false istio-provisioner:false kong:false kubeflow:false kubevirt:false logviewer:false metallb:false metrics-server:false nvidia-device-plugin:false nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false storage-provisioner-rancher:false volumesnapshots:false]
+I0122 15:57:22.197169   18380 addons.go:69] Setting default-storageclass=true in profile "minikube"
+I0122 15:57:22.197169   18380 addons.go:69] Setting storage-provisioner=true in profile "minikube"
+I0122 15:57:22.197169   18380 addons.go:231] Setting addon storage-provisioner=true in "minikube"
+I0122 15:57:22.197169   18380 addons_storage_classes.go:33] enableOrDisableStorageClasses default-storageclass=true on "minikube"
+I0122 15:57:22.197696   18380 host.go:66] Checking if "minikube" exists ...
+I0122 15:57:22.198206   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:57:22.198723   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:57:22.227050   18380 virtualbox.go:136] virtual box version: 7.0.12r159484
+I0122 15:57:22.227050   18380 global.go:122] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.0.12r159484
+}
+I0122 15:57:22.231173   18380 global.go:122] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0122 15:57:22.231173   18380 global.go:122] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0122 15:57:22.287058   18380 ssh_runner.go:195] Run: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml | sed -e '/^        forward . \/etc\/resolv.conf.*/i \        hosts {\n           192.168.59.1 host.minikube.internal\n           fallthrough\n        }' -e '/^        errors *$/i \        log' | sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig replace -f -"
+I0122 15:57:22.349086   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:57:22.349086   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:57:22.349598   18380 out.go:177]   - Используется образ gcr.io/k8s-minikube/storage-provisioner:v5
+I0122 15:57:22.350618   18380 addons.go:423] installing /etc/kubernetes/addons/storage-provisioner.yaml
+I0122 15:57:22.350618   18380 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/storage-provisioner.yaml (2676 bytes)
+I0122 15:57:22.350618   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:57:22.355227   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:57:22.355227   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:57:22.357271   18380 addons.go:231] Setting addon default-storageclass=true in "minikube"
+I0122 15:57:22.357271   18380 host.go:66] Checking if "minikube" exists ...
+I0122 15:57:22.358291   18380 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0122 15:57:22.410438   18380 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+Encryption:     disabled
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+CfgFile="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="cd45afb9-a3c8-4ef2-8671-40013e10afaa"
+memory=3500
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+BIOS NVRAM File="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2024-01-22T12:56:24.245000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="b5934f78-7b55-487b-a057-27247e36272d"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="f1714c71-bb2b-47ad-8326-9d8a16d52dfc"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="08002711AA7C"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,50426,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #5"
+macaddress2="080027FC8B99"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\kingl.LAPTOP-F94MTB1F\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1705928205249
+GuestAdditionsFacility_VirtualBox System Service=50,1705928205742
+GuestAdditionsFacility_Seamless Mode=0,1705928205248
+GuestAdditionsFacility_Graphics Mode=0,1705928205248
+}
+I0122 15:57:22.410438   18380 main.go:141] libmachine: STDERR:
+{
+}
+I0122 15:57:22.410438   18380 addons.go:423] installing /etc/kubernetes/addons/storageclass.yaml
+I0122 15:57:22.410438   18380 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/storageclass.yaml (271 bytes)
+I0122 15:57:22.410438   18380 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:50426 SSHKeyPath:C:\Users\kingl.LAPTOP-F94MTB1F\.minikube\machines\minikube\id_rsa Username:docker}
+I0122 15:57:22.485526   18380 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.28.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml
+I0122 15:57:22.505434   18380 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.28.3/kubectl apply -f /etc/kubernetes/addons/storageclass.yaml
+I0122 15:57:22.592811   18380 global.go:122] hyperv default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @(Get-CimInstance Win32_ComputerSystem).HypervisorPresent returned "False\r\n" Reason: Fix:Enable Hyper-V: Start PowerShell as Administrator, and run: 'Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All' Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/hyperv/ Version:}
+I0122 15:57:22.595361   18380 global.go:122] qemu2 default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in %!P(MISSING)ATH%!R(MISSING)eason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0122 15:57:22.614758   18380 kapi.go:248] "coredns" deployment in "kube-system" namespace and "minikube" context rescaled to 1 replicas
+I0122 15:57:22.615269   18380 start.go:223] Will wait 6m0s for node &{Name: IP:192.168.59.104 Port:8443 KubernetesVersion:v1.28.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0122 15:57:22.615780   18380 out.go:177] * Компоненты Kubernetes проверяются ...
+I0122 15:57:22.618864   18380 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service kubelet
+I0122 15:57:23.291509   18380 ssh_runner.go:235] Completed: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml | sed -e '/^        forward . \/etc\/resolv.conf.*/i \        hosts {\n           192.168.59.1 host.minikube.internal\n           fallthrough\n        }' -e '/^        errors *$/i \        log' | sudo /var/lib/minikube/binaries/v1.28.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig replace -f -": (1.0044503s)
+I0122 15:57:23.291509   18380 start.go:926] {"host.minikube.internal": 192.168.59.1} host record injected into CoreDNS's ConfigMap
+I0122 15:57:23.447245   18380 api_server.go:52] waiting for apiserver process to appear ...
+I0122 15:57:23.449806   18380 ssh_runner.go:195] Run: sudo pgrep -xnf kube-apiserver.*minikube.*
+I0122 15:57:23.461498   18380 out.go:177] * Включенные дополнения: storage-provisioner, default-storageclass
+I0122 15:57:23.462008   18380 addons.go:502] enable addons completed in 1.2653537s: enabled=[storage-provisioner default-storageclass]
+I0122 15:57:23.463027   18380 api_server.go:72] duration metric: took 847.7577ms to wait for apiserver process to appear ...
+I0122 15:57:23.463027   18380 api_server.go:88] waiting for apiserver healthz status ...
+I0122 15:57:23.463027   18380 api_server.go:253] Checking apiserver healthz at https://192.168.59.104:8443/healthz ...
+I0122 15:57:23.468130   18380 api_server.go:279] https://192.168.59.104:8443/healthz returned 200:
+ok
+I0122 15:57:23.469151   18380 api_server.go:141] control plane version: v1.28.3
+I0122 15:57:23.469151   18380 api_server.go:131] duration metric: took 6.1245ms to wait for apiserver health ...
+I0122 15:57:23.469151   18380 system_pods.go:43] waiting for kube-system pods to appear ...
+I0122 15:57:23.479895   18380 system_pods.go:59] 5 kube-system pods found
+I0122 15:57:23.479895   18380 system_pods.go:61] "etcd-minikube" [2b039a0c-6b0b-4642-8d68-d30676c9f8ea] Running / Ready:ContainersNotReady (containers with unready status: [etcd]) / ContainersReady:ContainersNotReady (containers with unready status: [etcd])
+I0122 15:57:23.479895   18380 system_pods.go:61] "kube-apiserver-minikube" [6acce1ca-379f-4810-afe0-a0463f80db08] Running / Ready:ContainersNotReady (containers with unready status: [kube-apiserver]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-apiserver])
+I0122 15:57:23.479895   18380 system_pods.go:61] "kube-controller-manager-minikube" [93f6b8a2-c71a-443a-9bea-c8cb3c43a71f] Running / Ready:ContainersNotReady (containers with unready status: [kube-controller-manager]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-controller-manager])
+I0122 15:57:23.479895   18380 system_pods.go:61] "kube-scheduler-minikube" [60e167b2-3159-4e7c-872f-e97e34af71bd] Running / Ready:ContainersNotReady (containers with unready status: [kube-scheduler]) / ContainersReady:ContainersNotReady (containers with unready status: [kube-scheduler])
+I0122 15:57:23.479895   18380 system_pods.go:61] "storage-provisioner" [bbb387a5-bb98-4646-92dc-6e3b52d5158b] Pending: PodScheduled:Unschedulable (0/1 nodes are available: 1 node(s) had untolerated taint {node.kubernetes.io/not-ready: }. preemption: 0/1 nodes are available: 1 Preemption is not helpful for scheduling..)
+I0122 15:57:23.479895   18380 system_pods.go:74] duration metric: took 10.7435ms to wait for pod list to return data ...
+I0122 15:57:23.479895   18380 kubeadm.go:581] duration metric: took 864.6257ms to wait for : map[apiserver:true system_pods:true] ...
+I0122 15:57:23.479895   18380 node_conditions.go:102] verifying NodePressure condition ...
+I0122 15:57:23.483459   18380 node_conditions.go:122] node storage ephemeral capacity is 17784752Ki
+I0122 15:57:23.483459   18380 node_conditions.go:123] node cpu capacity is 2
+I0122 15:57:23.483459   18380 node_conditions.go:105] duration metric: took 3.5641ms to run NodePressure ...
+I0122 15:57:23.483459   18380 start.go:228] waiting for startup goroutines ...
+I0122 15:57:23.483459   18380 start.go:233] waiting for cluster config update ...
+I0122 15:57:23.483459   18380 start.go:242] writing updated cluster config ...
+I0122 15:57:23.487041   18380 ssh_runner.go:195] Run: rm -f paused
+I0122 15:57:23.597590   18380 start.go:600] kubectl: 1.29.0, cluster: 1.28.3 (minor skew: 1)
+I0122 15:57:23.598102   18380 out.go:177] * Готово! kubectl настроен для использования кластера "minikube" и "default" пространства имён по умолчанию
+
+* 
+* ==> Docker <==
+* 
+* ==> container status <==
+* 
+* ==> describe nodes <==
