@@ -1,0 +1,13 @@
+{{- range $index, $postgres := .Values.postgres }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $postgres.containerName }}-clusterip
+spec:
+  type: ClusterIP
+  selector:
+    app: {{ $postgres.containerName }}
+  ports:
+    - port: {{ $postgres.port }}
+      protocol: TCP
+{{- end}}

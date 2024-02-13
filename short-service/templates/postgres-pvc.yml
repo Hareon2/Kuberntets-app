@@ -1,0 +1,12 @@
+{{- range $index, $postgres := .Values.postgres }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $postgres.containerName }}-pvc
+spec:
+  resources:
+    requests:
+      storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+{{- end }}

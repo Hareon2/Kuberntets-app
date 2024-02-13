@@ -1,0 +1,21 @@
+{{- range $index, $postgres := .Values.postgres }}
+{{ include "deployment-spec.template" $postgres}}
+          env:
+            {{- range $postgres.envs }}
+            {{- $data := dict "name" $postgres.name "env" . }}
+            {{- include "env.template" $data | indent 12 }}
+            {{- end }}
+{{- end}}
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+              subPath: postgres
+            - name: init-db-script
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+        - name: init-db-script
+          configMap:
+            name: init-db-script

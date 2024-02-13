@@ -1,0 +1,12 @@
+{{- range .Values.app }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: short-app-clusterip
+spec:
+  selector:
+    app: {{ .name }}
+  ports:
+    - port: {{ .port }}
+      protocol: TCP
+{{- end }}

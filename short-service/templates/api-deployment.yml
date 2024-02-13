@@ -1,0 +1,17 @@
+{{- range $index, $api := .Values.api }}
+{{ include "deployment-spec.template" $api}}
+          env:
+            {{- range $api.envs }}
+            {{- $data := dict "name" $api.name "env" . }}
+            {{- include "env.template" $data | indent 12 }}
+            {{- end }}
+          livenessProbe:
+            exec:
+              command:
+                - curl
+                - --fail
+                - http://localhost:3000/api
+            initialDelaySeconds: 30
+            periodSeconds: 5
+            failureThreshold: 1
+{{- end }}

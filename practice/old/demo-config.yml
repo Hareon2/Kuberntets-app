@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: demo-config
+data:
+    {{- if eq .Values.env "production"}}
+    paymentToken: "1234"
+    {{- else }}
+    paymentToken: false
+    {{- end }}
+    key: {{ .Release.Name}}
+    name: {{ .Values.name }}
+    chart: {{ quote .Chart.AppVersion}}
+    date: {{ now | date "2006-01-02" | quote }}
+    numberIs: {{- with .Values.data.value.number.subject }}
+    tanks: {{ .tank }}
+    bear: {{ .bear }}
+  {{- end}}
+    apps:
+      {{- range $index, $apps := .Values.apps }}
+      {{ $apps.name }}: {{ $apps.version }}
+      {{- end }}

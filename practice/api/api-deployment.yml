@@ -20,12 +20,27 @@ spec:
                   resources:
                     limits:
                       memory: "500Mi"  # Adjust the value as needed
-                    requests:
-                      memory: "128Mi"
-                      cpu: "200m"
+                      cpu: "300m"
                   env:
                     - name: DATABASE_URL
                       valueFrom:
                         secretKeyRef:
                           name: short-api-secret
                           key: DATABASE_URL
+                  volumeMounts:
+                    - name: api-data
+                      mountPath: /etc/test
+                      readOnly: true
+                  livenessProbe:
+                    exec:
+                      command:
+                        - curl
+                        - --fail
+                        - http://localhost:3000/api
+                    initialDelaySeconds: 30
+                    periodSeconds: 5
+                    failureThreshold: 1
+            volumes:
+                - name: api-data
+                  configMap:
+                    name: short-api-config

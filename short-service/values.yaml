@@ -1,0 +1,57 @@
+app:
+  - deployment: short-app-deployment
+    name: short-app
+    image: antonlarichev/short-app
+    version: "v1.4"
+    containerName: app
+    port: 80
+    replicas: 1
+    limits:
+      memory: "128Mi"
+      cpu: "100m"
+
+api:
+  - deployment: api-deployment
+    name: short-api
+    image: antonlarichev/short-api
+    version: v1.0
+    containerName: api
+    port: 3000
+    replicas: 1
+    limits:
+      memory: "500Mi"  # Adjust the value as needed
+      cpu: "300m"
+    envs:
+      - DATABASE_URL
+
+postgres:
+  - deployment: postgres-deployment
+    name: postgres
+    image: postgres
+    version: "16.0"
+    containerName: postgres
+    replicas: 1
+    port: 5432
+    limits:
+      memory: "500Mi"
+      cpu: "300m"
+    envs:
+      - POSTGRES_DB
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+apps:
+  postgres:
+    name: postgres
+    port: 5432
+  api:
+    containerName: api
+    name: short-api
+    port: 3000
+  app:
+    name: short-app
+    port: 80
+
+database:
+  user: demo
+  password: demo
+  db: demo
